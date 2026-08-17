@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>あなたの意思決定タイプ診断</title>
+　<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+
+    <h1>あなたの意思決定タイプ診断</h1>
+
+    <p class="description">
+        5つの質問に答えて、あなたの意思決定の特徴を診断します。
+    </p>
+
+    <!-- 診断フォーム -->
+    <form id="quizForm">
+
+        <!-- Q1 -->
+        <div class="question">
+            <h2>Q1. 大きな買い物をするとき、あなたは？</h2>
+
+            <label>
+                <input type="radio" name="q1" value="A">
+                直感で「これだ！」と思ったら買う
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="B">
+                メリット・デメリットを比較する
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="C">
+                友達や家族の意見を聞く
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="D">
+                失敗しないか何度も考える
+            </label>
+        </div>
+
+        <!-- Q2 -->
+        <div class="question">
+            <h2>Q2. 予定を決めるとき、一番気になることは？</h2>
+
+            <label>
+                <input type="radio" name="q2" value="A">
+                自分が楽しめるかどうか
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="B">
+                効率よく行動できるか
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="C">
+                周りの人が楽しめるか
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="D">
+                問題が起こらないか
+            </label>
+        </div>
+
+        <!-- Q3 -->
+        <div class="question">
+            <h2>Q3. 急に予定が変更されたら？</h2>
+
+            <label>
+                <input type="radio" name="q3" value="A">
+                その場で新しい案を考える
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="B">
+                一番効率のよい方法を考える
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="C">
+                周りの人と相談して決める
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="D">
+                まず問題点を整理する
+            </label>
+        </div>
+
+        <!-- Q4 -->
+        <div class="question">
+            <h2>Q4. 何かを決めるとき、あなたが苦手なのは？</h2>
+
+            <label>
+                <input type="radio" name="q4" value="A">
+                考えすぎること
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="B">
+                選択肢を比較しすぎること
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="C">
+                人の意見を気にしすぎること
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="D">
+                失敗を恐れて決断が遅くなること
+            </label>
+        </div>
+
+        <!-- Q5 -->
+        <div class="question">
+            <h2>Q5. あなたが一番大切にしたいのは？</h2>
+
+            <label>
+                <input type="radio" name="q5" value="A">
+                自分の感覚や楽しさ
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="B">
+                合理性や効率
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="C">
+                周囲との協力
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="D">
+                安全性や確実性
+            </label>
+        </div>
+
+        <button type="submit">
+            診断する
+        </button>
+
+    </form>
+
+    <!-- 診断結果 -->
+    <section id="result">
+
+        <h2 id="resultTitle"></h2>
+
+        <div class="result-section">
+            <h3>あなたの特徴</h3>
+            <p id="resultDescription"></p>
+        </div>
+
+        <div class="result-section">
+            <h3>あなたの強み</h3>
+            <p id="resultStrength"></p>
+        </div>
+
+        <div class="result-section">
+            <h3>注意したいポイント</h3>
+            <p id="resultWeakness"></p>
+        </div>
+
+        <div class="result-section">
+            <h3>おすすめの改善方法</h3>
+            <p id="resultAdvice"></p>
+        </div>
+
+        <button id="restartButton" type="button">
+            もう一度診断する
+        </button>
+
+    </section>
+
+</main>
+
+<!-- JavaScriptを読み込む -->
+<script src="script.js"></script>
+</body>
+</html>
